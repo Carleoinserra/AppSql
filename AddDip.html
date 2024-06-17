@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserisci Nuovo Dipendente</title>
+</head>
+<body>
+    <h1>Inserisci Nuovo Dipendente</h1>
+    <form action="addDip.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="mansione">Mansione:</label>
+        <input type="text" id="mansione" name="mansione" required><br><br>
+        <input type="submit" value="Inserisci">
+    </form>
+    <br>
+    <br>
+    <hr>
+    <h1>Aggiorna Mansione Dipendente</h1>
+    <form action="upMansione.php" method="post">
+        <label for="nome">Nome Dipendente:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="mansione">Nuova Mansione:</label>
+        <input type="text" id="mansione" name="mansione" required><br><br>
+        <input type="submit" value="Aggiorna">
+    </form>
+    <br>
+    <br>
+    <form action = "mostra.php">
+        <input type="submit" value ="mostra">
+    </form>
+    <br>
+    <br>
+    <form action = "sqlDelete.php">
+        <input type="submit" value ="Cancella tutti">
+    </form>
+</body>
+</html>
